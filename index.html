@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <title>
+      Apple Maps
+    </title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin" />
+    <meta name="apple-itunes-app" content="app-id=915056765" />
+    <style type="text/css">
+      #unsupported {
+  min-height: 90vh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, &#34;Helvetica Neue&#34;, Helvetica, Arial, sans-serif;
+}
+
+.container {
+  display: grid;
+  place-items: center;
+}
+
+img {
+  width: 90px;
+  display: block;
+}
+
+img.icon {
+  height: 90px;
+  margin-bottom: 30px;
+}
+
+.logo {
+  display: flex;
+  align-items:center;
+}
+
+.logo img:first-of-type {
+  width: 120px;
+}
+
+.beta-pill {
+  width: 42px;
+  height: 19px;
+  margin: 10px 0 0 -25px;
+  border-radius: 16px;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+#errorMessage {
+  font-size: 1.294rem;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+#link {
+  font-size: 0.941rem;
+  text-decoration: none;
+  font-weight: 600;
+  color: #007aff;
+}
+
+#link span {
+  margin-left: 5px;
+  font-size: 0.764rem;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  body {
+    background: #242628;
+    color: #fff;
+  }
+
+  .logo img:first-of-type {
+    filter: brightness(0) invert(1);
+  }
+
+  .beta-pill {
+    background: rgba(255, 255, 255, 0.4);
+    color: #fff;
+  }
+}
+    </style>
+  </head>
+  <body>
+    <div id="unsupported">
+      <div class="container">
+        <img class="icon" src="/static/maps-app-web-client/images/maps-app-icon-120x120.png" />
+        <div class="logo">
+          <img src="/static/maps-app-web-client/images/apple-maps-en-US.svg" />
+          <img class="beta-pill" src="/static/maps-app-web-client/images/beta-pill.svg" />
+        </div>
+        <div id="errorMessage">
+          Your current browser isn&#39;t supported.
+        </div>
+        <a id="link" href="https://support.apple.com/120585" target="_blank">        See Supported Browsers
+        <span>        ↗
+</span>
+</a>
+      </div>
+    </div>
+  </body>
+</html>
